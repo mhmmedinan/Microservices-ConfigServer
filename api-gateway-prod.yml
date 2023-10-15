@@ -2,8 +2,7 @@ eureka:
   client:
     shouldFetchRegistry: true
     shouldRegisterWithEureka: true
-    serviceUrl:
-      defaultZone: http://discovery-server:8761/eureka/
+    serviceUrl: http://discovery-server:8761/eureka/
   Instance:
     NonSecurePort: 9500
     HostName: localhost
