@@ -6,7 +6,7 @@ eureka:
     instance:
         hostname: discovery-server
 server:
-    port: 9051
+    port: 8761
 spring: 
     application:
         name: eureka-server
