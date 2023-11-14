@@ -1,0 +1,11 @@
+eureka:
+  client:
+    shouldFetchRegistry: true
+    shouldRegisterWithEureka: true
+    serviceUrl: http://localhost:8761/eureka/
+  Instance:
+    NonSecurePort: 0
+    HostName: localhost
+    InstanceId: InventoryService,Port:0
+ConnectionStrings:
+  RentACar: Server=MRM\SQLEXPRESS; Database=InventoryDb;Trusted_Connection=true
