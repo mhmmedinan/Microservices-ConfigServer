@@ -5,5 +5,5 @@ eureka:
     serviceUrl: http://discovery-server:8761/eureka/
   Instance:
     NonSecurePort: 9500
-    HostName: localhost
+    HostName: api-gateway
     InstanceId: ApiGateway,Port:9500
