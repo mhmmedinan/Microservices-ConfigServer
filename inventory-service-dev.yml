@@ -4,10 +4,8 @@ eureka:
     shouldRegisterWithEureka: true
     serviceUrl: http://localhost:8761/eureka/
   Instance:
+    Port: 0 
     HostName: localhost
-    InstanceId: ${spring.application.name}:${instanceId:${random.value}}
-server:
-    port: 0
-
+    InstanceId: InventoryService
 ConnectionStrings:
   RentACar: Server=MRM\SQLEXPRESS; Database=InventoryDb;Trusted_Connection=true
