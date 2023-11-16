@@ -8,4 +8,4 @@ eureka:
     HostName: localhost
     InstanceId: InventoryService
 ConnectionStrings:
-  RentACar: Server=(localdb)\\MSSQLLocalDB; Database=InventoryDb;Trusted_Connection=true
+  RentACar: Server=(localdb)\MSSQLLocalDB; Database=InventoryDb;Trusted_Connection=true
