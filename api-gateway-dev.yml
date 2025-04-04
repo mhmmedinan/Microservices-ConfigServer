@@ -1,10 +1,15 @@
-eureka:
-  client:
-    shouldFetchRegistry: true
-    shouldRegisterWithEureka: true
-    serviceUrl: http://localhost:8761/eureka/
-  Instance:
-    HostName: localhost
-    InstanceId: ApiGateway,Port:9500
 server:
-    port: 9500
+  port: 9500
+
+ConsulOptions:
+  Id: ApiGateway
+  ConsulAddress: http://localhost:8500
+  ServiceAddress: http://localhost:9500
+  ServiceName: ApiGateway
+  DisableAgentCheck: false
+  Tags:
+    - gateway
+    - api
+  ServiceDeRegistrationSeconds: 60
+  IntervalSeconds: 10
+  HealthCheckEndPoint: health
