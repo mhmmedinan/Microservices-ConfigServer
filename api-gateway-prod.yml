@@ -1,0 +1,15 @@
+server:
+  port: 9500
+
+ConsulOptions:
+  Id: ApiGateway
+  ConsulAddress: http://consul:8500
+  ServiceAddress: http://api-gateway:9500
+  ServiceName: ApiGateway
+  DisableAgentCheck: false
+  Tags:
+    - gateway
+    - api
+  ServiceDeRegistrationSeconds: 60
+  IntervalSeconds: 10
+  HealthCheckEndPoint: health
