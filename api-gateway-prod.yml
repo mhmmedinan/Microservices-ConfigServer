@@ -9,4 +9,4 @@ ConsulOptions:
     - api
   ServiceDeRegistrationSeconds: 60
   IntervalSeconds: 10
-  HealthCheckEndPoint: api/values/health
+  HealthCheckEndPoint: health
