@@ -1,0 +1,15 @@
+ConnectionStrings:
+  BaseDb: "Server=MRM\\SQLEXPRESS; Database=CustomerServiceDb;Trusted_Connection=true;Encrypt=false"
+
+ConsulOptions:
+  Id: CustomerService
+  ConsulAddress: http://localhost:8500
+  ServiceAddress: http://localhost:5001
+  ServiceName: CustomerService
+  DisableAgentCheck: false
+  Tags:
+    - customer
+    - service
+  ServiceDeRegistrationSeconds: 60
+  IntervalSeconds: 10
+  HealthCheckEndPoint: health
